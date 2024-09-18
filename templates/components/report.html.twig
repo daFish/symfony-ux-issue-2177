@@ -1,0 +1,18 @@
+<form {{ attributes.defaults({
+    class: 'space-y-6',
+    name: 'report',
+    method: 'post',
+    'data-action': 'live#action:prevent',
+    'data-live-action-param': 'save',
+    novalidate: 'novalidate'
+}) }}>
+    {{ form_row(form.report) }}
+
+    <div class="pt-5">
+        <div class="flex justify-end">
+
+        </div>
+    </div>
+
+    {{ form_rest(form) }}
+</form>
